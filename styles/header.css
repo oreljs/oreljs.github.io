@@ -1,0 +1,86 @@
+.main-header {
+	background-color: #f3df49;	
+}
+
+.main-header .back {
+	width: 100%;
+}
+
+.nav-block {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.nav-block .name-and-logo {
+	display: flex;
+	align-items: center;
+}
+.nav-block .name-and-logo .logo {
+	width: 50px;
+	flex: 0 0 auto;
+}
+
+.nav-block  .name-and-logo .name {
+	font-size: 2em;
+	flex: 0 1 auto;
+	padding-left: 15px;
+}
+
+.nav-block .name-and-logo .name.meetup {
+	padding-right: 7px;
+}
+
+.nav-block nav li {
+	display: inline-block;
+	list-style-type: none;
+	padding: 7px;
+	font-size: 1.2em;
+}
+.nav-block nav li  a {
+	text-decoration: none;
+	color: black;
+}
+
+.nav-block nav li  a:hover {
+	text-decoration: underline;
+}
+
+.image-block {
+	position: relative;
+	overflow: hidden;
+}
+
+.image-block .description {
+	position: absolute;
+    background-color: rgba(150, 150, 150, 0.7);
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px;
+    top: 20px;
+    color: rgb(255, 259, 182);
+    max-width: 600px;
+}
+.image-block  .back {
+	min-width: 650px;
+}
+
+.image-block  .description .description-main {
+    font-size: 1.6em;
+}	
+.image-block  .description .description-extra {
+	font-size: 1.3em;
+	font-style: italic;
+    padding-top: 7px;
+}
+
+@media (max-width: 800px) {
+	.nav-block nav {
+		display: none;
+	}
+}
+
+@media (max-width: 400px) {
+	.image-block  .description {
+		font-size: 0.8em;
+	}
+}

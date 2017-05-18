@@ -1,0 +1,42 @@
+.main .main-section {
+	padding: 20px;
+}
+
+.main .common {
+	display: flex;
+}
+
+.main .common .common-item {	
+	flex: 1 1 auto;
+}
+
+.main .common .common-item h2 {
+	border-bottom: 3px solid #f3df49;
+    padding-bottom: 4px;
+    margin-right: 20px;
+}
+
+.main .reasons  {
+	text-align: center;
+}
+
+.main .reasons .reasons-list {
+	display: flex;
+}
+
+.main .reasons .reasons-list .reason {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-width: 100px;
+}
+
+@media (max-width: 800px) {
+	.main .common {
+		flex-wrap: wrap;
+	}
+	.main .reasons .reasons-list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
