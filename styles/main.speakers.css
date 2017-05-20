@@ -91,7 +91,7 @@
 	.main .speakers .speakers-list  .speaker  {
 		flex-wrap: wrap;
 	}
-	.become-speaker-form {
+	.main .become-speaker {
 		max-width: 100%;
 	}
 }
