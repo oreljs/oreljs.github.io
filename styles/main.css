@@ -31,12 +31,65 @@
 	min-width: 100px;
 }
 
+.main .place {
+	padding-top: 55px;
+}
+
+.main .place-wrapper {
+	display: flex;
+	max-width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.main .place-wrapper .place-description {
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+
+.main .inventos-photo {
+	width: 100%;
+}
+
+.main .place-description {
+	flex: 1 1 auto;
+}
+
+.main .yandex-map {
+	flex: 1.5 1 800px;
+	margin: auto;
+}
+
+.main .yandex-map iframe {
+	width: 560px; 
+	height: 400px;
+	max-width: 100%;
+}
+
+.main .contacts {
+	padding-top: 40px;
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.main .contacts .contact-form {
+	display: none;
+}
+
 @media (max-width: 800px) {
 	.main .common {
 		flex-wrap: wrap;
 	}
 	.main .reasons .reasons-list {
 		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	.main .place-wrapper {
+		max-width: 100%;
 		flex-wrap: wrap;
 	}
 }

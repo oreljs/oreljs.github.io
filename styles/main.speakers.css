@@ -10,6 +10,10 @@
 	margin-right: auto;
 }
 
+.main .speakers .contact-form  {
+	display: none;
+}
+
 .main .speaker-info {
 	padding-right: 20px;
 	padding-bottom: 10px;
@@ -19,6 +23,7 @@
 	margin-right: auto;
 }
 
+
 .main .speaker-info .speaker-name {
 	margin-bottom: 5px;
     margin-top: 5px;
@@ -26,6 +31,12 @@
 .main .speaker-info .speaker-from {
 	color: darkslategray;
 }
+
+.main .speaker-info .speaker-from  a {
+	color: darkslategray;
+	text-decoration: none;
+}
+
 
 .main .speaker-info .picture {
 	border-radius: 50%;
@@ -37,52 +48,14 @@
 	margin-right: auto;
 	max-width: 60%;
 	text-align: center;
+	padding-top: 40px;
 }
 
-.become-speaker-button {
-  background: #f3df49;
-  background-image: -webkit-linear-gradient(top, #f3df49, #ceb80d);
-  background-image: -moz-linear-gradient(top, #f3df49, #ceb80d);
-  background-image: -ms-linear-gradient(top, #f3df49, #ceb80d);
-  background-image: -o-linear-gradient(top, #f3df49, #ceb80d);
-  background-image: linear-gradient(to bottom, #f3df49, #ceb80d);
-  -webkit-border-radius: 8;
-  -moz-border-radius: 8;
-  border-radius: 8px;
-  font-family: Arial;
-  color: #ffffff;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
-  font-size: 1.2em;
+.main  .become-speaker .field.description {
+	height: 70px;
 }
 
-.become-speaker-button:hover {
-  background: #3cb0fd;
-  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
-  text-decoration: none;
-}
 
-.become-speaker-form {
-	display: none;
-	padding: 10px;
-	text-align: left;
-}
-
-.become-speaker-form .field {
-	width: 100%;
-	margin-top: 10px;
-	font-size: 1.1em;
-	padding: 3px;
-}
-
-.become-speaker-form .become-speaker-button {
-	float: right;
-	font-size: 1em;
-}
 
 @media (max-width: 800px) {	
 	.main .speakers .speakers-list  .speaker  {
