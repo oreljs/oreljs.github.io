@@ -1,0 +1,97 @@
+.main .speakers  h2 {
+	text-align: center;
+}
+
+.main .speakers .speakers-list  .speaker  {
+	padding: 10px;
+	display: flex;
+	max-width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.main .speaker-info {
+	padding-right: 20px;
+	padding-bottom: 10px;
+	text-align: center;
+	min-width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.main .speaker-info .speaker-name {
+	margin-bottom: 5px;
+    margin-top: 5px;
+}
+.main .speaker-info .speaker-from {
+	color: darkslategray;
+}
+
+.main .speaker-info .picture {
+	border-radius: 50%;
+	width: 150px;
+}
+
+.main .become-speaker {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 60%;
+	text-align: center;
+}
+
+.become-speaker-button {
+  background: #f3df49;
+  background-image: -webkit-linear-gradient(top, #f3df49, #ceb80d);
+  background-image: -moz-linear-gradient(top, #f3df49, #ceb80d);
+  background-image: -ms-linear-gradient(top, #f3df49, #ceb80d);
+  background-image: -o-linear-gradient(top, #f3df49, #ceb80d);
+  background-image: linear-gradient(to bottom, #f3df49, #ceb80d);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #ffffff;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.become-speaker-button:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+.become-speaker-form {
+	display: none;
+	padding: 10px;
+	text-align: left;
+}
+
+.become-speaker-form .field {
+	width: 100%;
+	margin-top: 10px;
+	font-size: 1.1em;
+	padding: 3px;
+}
+
+.become-speaker-form .become-speaker-button {
+	float: right;
+	font-size: 1em;
+}
+
+@media (max-width: 800px) {	
+	.main .speakers .speakers-list  .speaker  {
+		max-width: 100%;
+	}
+	.main .speakers .speakers-list  .speaker  {
+		flex-wrap: wrap;
+	}
+	.become-speaker-form {
+		max-width: 100%;
+	}
+}
