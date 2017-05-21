@@ -31,6 +31,10 @@
 	min-width: 100px;
 }
 
+.main .reasons .reasons-list .reason .reason-text {
+	max-width: 100%;
+}
+
 .main .place {
 	padding-top: 55px;
 }
