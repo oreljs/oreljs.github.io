@@ -13,6 +13,7 @@
   padding: 10px 20px 10px 20px;
   text-decoration: none;
   font-size: 1.2em;
+  margin-top: 7px;
 }
 
 .form-button:hover {
@@ -36,6 +37,17 @@
 	margin-top: 10px;
 	font-size: 1.1em;
 	padding: 3px;
+	box-sizing: border-box;
+}
+
+.simple-button {
+	background: white;
+    padding: 9px 15px;
+	font-size: inherit;
+	border: darkorange 1px solid;
+}
+.simple-button:hover {
+	background: #f3df49;
 }
 
 .contact-form textarea.field {

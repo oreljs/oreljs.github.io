@@ -60,18 +60,33 @@
 						<img class="picture" src="img/developer.png" />
 						<h3 class="for-who">Если ты разработчик</h3>
 						<p class="reason-text">Познакомиться с другими веб-разработчиками Орла, обменяться опытом и просто хорошо провести время. Можно также <a href="#become-speaker" onclick="openBecomeSpeakerForm()" >стать одним из докладчиков</a>.</p>
+						<button class="simple-button" onclick="openRegisterForm('developer')" >Зарегистрироваться</button>
 					</div>
 					<div class="reason">
 						<img class="picture" src="img/student.png" />
 						<h3 class="for-who">Если ты студент</h3>
 						<p class="reason-text">Это шанс поговорить с реальными людьми из профессии, узнать что-то полезное, встретить работодателей Орла.</p>
+						<button class="simple-button" onclick="openRegisterForm('student')" >Зарегистрироваться</button>
 					</div>
 					<div class="reason">
 						<img class="picture" src="img/business.png" />
 						<h3 class="for-who">Если ты работодатель</h3>
 						<p class="reason-text">Это отличная возможность найти нужных людей и рассказать о своей компании. Лучший способ поучаствовать - <a href="#become-speaker" onclick="openBecomeSpeakerForm()" >сделать доклад</a>. Возможны и другие формы сотрудничества.</p>
+						<button class="simple-button" onclick="openRegisterForm('business')" >Зарегистрироваться</button>
 					</div>
 				</div>
+				<form action="https://formspree.io/oreljs@mail.ru" method="POST" id="register-form" class="contact-form register-form">
+					<input hidden name="type" value="Участник" >
+					<select class="field" name="whois" id="register-who-is" required>
+						<option value="developer">Разработчик</option>
+						<option value="student">Студент</option>
+						<option value="business">Работодатель</option>
+					</select>
+					<input class="field" type="text" name="name" placeholder="Имя и фамилия" required>
+					<input class="field" type="email" name="_replyto" placeholder="E-mail" required>
+					<textarea class="field" name="about" placeholder="Коротко о себе - кем работаете/учитесь, как давно в профессии, какими технологиями интересуетесь" required ></textarea>
+					<input class="form-button" type="submit" value="Зарезервировать место">
+				</form>
 			</section>
 			<section class="speakers main-section" id="speakers">
 				<h2>Доклады</h2>
@@ -167,6 +182,12 @@
 			function openContactForm() {
 				document.getElementById("contact-button").style.display = "none";
 				document.getElementById("contact-form").style.display = "block";
+			}
+			function openRegisterForm(whoIs) {
+				document.getElementById("register-who-is").value = whoIs;
+				let form = document.getElementById("register-form");
+				form.style.display = "block";
+				form.scrollIntoView();
 			}
 		</script>
 		<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter44718487 = new Ya.Metrika({ id:44718487, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/44718487" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->

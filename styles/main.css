@@ -35,6 +35,14 @@
 	max-width: 100%;
 }
 
+.main .register-form {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	display: none;
+	max-width: 70%;
+	margin: auto;
+}
+
 .main .place {
 	padding-top: 55px;
 }
@@ -90,6 +98,10 @@
 	.main .reasons .reasons-list {
 		display: flex;
 		flex-wrap: wrap;
+	}
+	
+	.main .register-form {
+		max-width: 100%;
 	}
 	
 	.main .place-wrapper {
