@@ -6,8 +6,7 @@
 	padding: 10px;
 	display: flex;
 	max-width: 70%;
-	margin-left: auto;
-	margin-right: auto;
+	margin: auto;
 }
 
 .main .speakers .contact-form  {
@@ -18,7 +17,7 @@
 	padding-right: 20px;
 	padding-bottom: 10px;
 	text-align: center;
-	min-width: 300px;
+	flex: 0 0 250px;
 }
 
 
