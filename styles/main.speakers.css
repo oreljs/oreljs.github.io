@@ -6,8 +6,7 @@
 	padding: 10px;
 	display: flex;
 	max-width: 70%;
-	margin-left: auto;
-	margin-right: auto;
+	margin: auto;
 }
 
 .main .speakers .contact-form  {
@@ -19,8 +18,6 @@
 	padding-bottom: 10px;
 	text-align: center;
 	flex: 0 0 250px;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 
@@ -60,9 +57,11 @@
 @media (max-width: 800px) {	
 	.main .speakers .speakers-list  .speaker  {
 		max-width: 100%;
-	}
-	.main .speakers .speakers-list  .speaker  {
 		flex-wrap: wrap;
+	}
+	.main .speakers .speakers-list  .speaker-info  {
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.main .become-speaker {
 		max-width: 100%;
