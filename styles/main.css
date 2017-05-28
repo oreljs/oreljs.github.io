@@ -43,6 +43,44 @@
 	margin: auto;
 }
 
+.main .register-form .tech-table-wrapper {
+    border: 1px solid gray;
+    margin-top: 10px;
+	padding: 5px;
+}
+.main .register-form .tech-table {
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.main .register-form .tech-table .tech {
+	display: table-row;
+}
+.main .register-form .tech-table .tech:hover {
+	background: lightgoldenrodyellow;
+}
+.main .register-form .tech-table .tech .tech-name {
+	display: table-cell;
+	max-width: 200px;
+}
+.main .register-form .tech-table  .tech  label {
+	display: table-cell;
+	text-align: center;
+	cursor: pointer;
+}
+.main .register-form .tech-table  .tech  label:hover {
+	background: lightblue;
+}
+.main .register-form .tech-table  .tech-header {
+	display: table-header-group;
+}
+.main .register-form .tech-table .tech-header  label {
+	display: table-cell;
+	padding: 5px 7px;
+}
+
 .main .place {
 	padding-top: 55px;
 }
