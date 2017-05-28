@@ -12,8 +12,8 @@
   cursor: pointer;
 }
 
-.form-button:hover {
-  background: #fad73f;
+.form-button:hover, .form-button:active  {
+  background: #d6b835;
   text-decoration: none;
 }
 
@@ -29,8 +29,8 @@
 	font-size: 1.1em;
 	padding: 5px 10px;
 	box-sizing: border-box;
-  border: 0;
-  border-bottom: 1px #f3df49 solid;
+    border: 0;
+    border-bottom: 1px lightblue solid;
 }
 
 .contact-form .field::-webkit-input-placeholder {color: silver; font-weight: 100;}
@@ -45,14 +45,12 @@
   border-radius: 8px;
   cursor: pointer;
 }
-.simple-button:hover {
+.simple-button:hover, .simple-button:active {
 	background: #f3df49;
 }
 
 .contact-form textarea.field {
-	height: 100px;
-  border: 0;
-  border-bottom: 1px #f3df49 solid;
+    height: 100px;
 }
 
 .contact-form .form-button {
