@@ -3,7 +3,7 @@
 }
 
 .main .speakers .speakers-list  .speaker  {
-	padding: 10px;
+	padding: 20px 0;
 	display: flex;
 	max-width: 70%;
 	margin: auto;
