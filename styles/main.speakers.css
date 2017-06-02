@@ -39,6 +39,9 @@
 	border-radius: 50%;
 	width: 150px;
 }
+.main .speaker.long-description  .speak-theme{
+	margin-top: 0;
+}
 
 .main .become-speaker {
 	margin-left: auto;
