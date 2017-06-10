@@ -2,11 +2,21 @@
 	text-align: center;
 }
 
-.main .speakers .speakers-list  .speaker  {
+.main .speakers .speakers-list  .speaker, .main .speakers .speakers-list .break {
 	padding: 20px 0;
 	display: flex;
 	max-width: 70%;
 	margin: auto;
+}
+
+.main .speakers .speakers-list .break  {
+	font-style: italic;
+}
+
+.main .speakers .speakers-list .break hr {
+	flex: 1 1 0%;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .main .speakers .contact-form  {
@@ -40,7 +50,7 @@
 	width: 150px;
 }
 .main .speaker.long-description  .speak-theme{
-	margin-top: 0;
+	margin-top: 0;	
 }
 
 .main .become-speaker {
