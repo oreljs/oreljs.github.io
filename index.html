@@ -39,6 +39,15 @@
 			</div>
 		</header>
 		<main class="main">
+			<section class="contacts main-section" id="contacts">
+				<button id="contact-button" class="form-button" onclick="openContactForm()" >Оставить отзыв</button>
+				<form action="https://formspree.io/oreljs@mail.ru" method="POST" class="contact-form" id="contact-form">
+					<input class="field" type="text" name="name" placeholder="Имя" required>
+					<input class="field" type="email" name="_replyto" placeholder="E-mail" required>
+					<textarea class="field description" name="message" placeholder="Ваши впечатления" required ></textarea>
+					<input class="form-button" type="submit" value="Отправить отзыв">
+				</form>
+			</section>
 			<section class="common main-section">
 				<div class="common-item what">
 					<h2>Что это?</h2>
