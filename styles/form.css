@@ -1,6 +1,5 @@
 .form-button {
   background: #f7df1e;
-  font-family: Arial;
   padding: 10px 20px;
   text-decoration: none;
   font-size: 1.2em;
@@ -14,7 +13,6 @@
 }
 
 .contact-form {
-
 	padding: 10px;
 	text-align: left;
 }
@@ -37,12 +35,12 @@
   border: none;
   margin-top: auto;
   padding: 9px 15px;
-	font-size: inherit;
-	background-color: #f7df1e;
+  font-size: inherit;
+  background-color: #f7df1e;
   cursor: pointer;
 }
 .simple-button:hover, .simple-button:active {
-	background: #f3df49;
+  background: #f3df49;
 }
 
 .contact-form textarea.field {
@@ -50,6 +48,6 @@
 }
 
 .contact-form .form-button {
-	float: right;
-	font-size: 1em;
+  float: right;
+  font-size: 1em;
 }
