@@ -40,7 +40,7 @@
 }
 
 .main .speaker-info .speaker-from  a {
-	color: darkslategray;
+	color: red;
 	text-decoration: none;
 }
 
@@ -50,7 +50,7 @@
 	width: 150px;
 }
 .main .speaker.long-description  .speak-theme{
-	margin-top: 0;	
+	margin-top: 0;
 }
 
 .main .become-speaker {
@@ -67,7 +67,7 @@
 
 
 
-@media (max-width: 800px) {	
+@media (max-width: 800px) {
 	.main .speakers .speakers-list  .speaker  {
 		max-width: 100%;
 		flex-wrap: wrap;

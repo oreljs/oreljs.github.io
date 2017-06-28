@@ -1,13 +1,9 @@
 .form-button {
-  background: #f3df49;
-  -webkit-border-radius: 8;
-  -moz-border-radius: 8;
-  border-radius: 8px;
+  background: #f7df1e;
   font-family: Arial;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 20px;
   text-decoration: none;
   font-size: 1.2em;
-  margin-top: 7px;
   border: 0;
   cursor: pointer;
 }
@@ -18,7 +14,7 @@
 }
 
 .contact-form {
-	
+
 	padding: 10px;
 	text-align: left;
 }
@@ -38,11 +34,11 @@
 .contact-form .field :-ms-input-placeholder      {color: silver; font-weight: 100;}
 
 .simple-button {
-	background: white;
+  border: none;
+  margin-top: auto;
   padding: 9px 15px;
 	font-size: inherit;
-	border: darkorange 1px solid;
-  border-radius: 8px;
+	background-color: #f7df1e;
   cursor: pointer;
 }
 .simple-button:hover, .simple-button:active {

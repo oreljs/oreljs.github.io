@@ -19,9 +19,9 @@
 			<div class="nav-block">
 				<div class="name-and-logo">
 					<div class="logo"></div>
-					<div class="name">ОрелJS Meetup</div>				
+					<div class="name">ОрелJS Meetup</div>
 				</div>
-				<nav>
+				<nav class="nav-menu">
 					<ul>
 						<li><a href="#speakers">Доклады</a></li>
 						<li><a href="#where">Место и время</a></li>
@@ -63,7 +63,7 @@
 				</div>
 			</section>
 			<section class="reasons main-section">
-		
+
 				<div class="reasons-list">
 					<div class="reason">
 						<img class="picture" src="img/developer.png" />
@@ -95,14 +95,14 @@
 					<input class="field" type="email" name="_replyto" placeholder="E-mail" required>
 					<input class="field" type="text" name="city" placeholder="Из какого вы города" required>
 					<textarea class="field" name="about" placeholder="Коротко о себе - кем работаете/учитесь, как давно в профессии, какими технологиями интересуетесь" required ></textarea>
-					
+
 					<div class="tech-table-wrapper">
-					<div class="tech-table">				
+					<div class="tech-table">
 						<div class="tech-header"><label></label>
 						<label>использовал</label>
 						<label>знаю что это</label>
 						<label>не знаю</label>
-						</div>					
+						</div>
 						<div class="tech"><span class="tech-name">Angular</span>
 						<label><input type="radio" name="Angular" value="use" required></label>
 						<label><input type="radio" name="Angular" value="know"></label>
@@ -222,7 +222,7 @@
 
 								<p>Знаете ли вы, что Angular 4 ближе к функциональному программированию чем другие фреймворки?</p>
 
-								<p>В этом докладе мы обсудим: 
+								<p>В этом докладе мы обсудим:
 									<ol>
 										<li> Что нового даёт нам Angular 4? </li>
 										<li> Рассмотрим его архитектуру и поймём ценность этих решений. </li>
@@ -245,7 +245,7 @@
 								Настройка среды разработки с использованием TypeScript, ES6-модулей и VisualStudio на основе SystemJS
 							</h3>
 							<p class="speak-description">
-								В ходе разработки данный подход позволяет максимально быстро увидеть изменения в окне браузера при внесении правок в код, а также обеспечивает удобную отладку без использования source map. В сборке production-версии используется JSPM и Rollup с tree-shaking для минимизации размера бандла. 
+								В ходе разработки данный подход позволяет максимально быстро увидеть изменения в окне браузера при внесении правок в код, а также обеспечивает удобную отладку без использования source map. В сборке production-версии используется JSPM и Rollup с tree-shaking для минимизации размера бандла.
 							</p>
 						</div>
 					</div>
@@ -308,7 +308,7 @@
 						<input class="form-button" type="submit" value="Отправить запрос">
 					</form>
 				</div>
-			</section>			
+			</section>
 			<section class="place main-section" id="where">
 				<div class="place-wrapper">
 					<div class="place-description">
@@ -316,10 +316,11 @@
 						<p>24 июня 2017 (суббота), начало - 13:30
 						<p>Inventos Tower - Орел, ул. Русанова, 21а</p>
 						<p>
-							Из Москвы: 
+							Из Москвы:
 							<a href="https://lastochka.tutu.ru/rasp_d.php?nnst1=2000000&nnst2=2000140&date=24.06.2017&date_second=24.06.2017">на поезде</a>,
 							<a href="https://www.blablacar.ru/poisk-poputchikov/moskva/orel/#?fn=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0&fc=55.755826%7C37.6173&fcc=RU&fp=0&tn=%D0%9E%D1%80%D1%91%D0%BB%2C+%D0%9E%D1%80%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C&tc=52.966847%7C36.06249&tcc=RU&tp=0&db=24%2F06%2F2017&sort=trip_date&order=asc&limit=10&page=1">blablacar</a>,
-							<a href="https://beepcar.ru/poputchiki/moskva_oryol?from=1686293227&to=27096008&date=2017-06-24">beepcar</a> (см. ближе к дате). 
+							<a href="https://beepcar.ru/poputchiki/moskva_oryol?from=1686293227&to=27096008&date=2017-06-24">beepcar</a> (см. ближе к дате).
+							<br/>
 							<a href="http://telegra.ph/Instrukciya-dlya-teh-kto-sobiraetsya-dobiratsya-na-OrelJS-iz-Moskvy-06-07">Инструкция</a> как добраться.
 							<br/>
 							Пишите в <a href="tg://resolve?domain=oreljs">Telegram (@oreljs)</a>, <a href="https://vk.com/oreljs">VK</a>, мы вас встретим.</p>
@@ -345,7 +346,7 @@
 				document.getElementById("become-speaker-button").style.display = "none";
 				document.getElementById("become-speaker-form").style.display = "block";
 			}
-			
+
 			function openContactForm() {
 				document.getElementById("contact-button").style.display = "none";
 				document.getElementById("contact-form").style.display = "block";
