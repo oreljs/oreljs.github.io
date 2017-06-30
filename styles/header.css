@@ -1,18 +1,15 @@
-.main-header {
-	background-color: #f3df49;	
-}
-
 .main-header .back {
 	width: 100%;
 }
-
+.nav-menu {
+	display: flex;
+}
 .nav-block {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding: 0 20px;
-	margin-bottom: 5px;
-	background: #fff;
+	margin: 5px 0;
 }
 .nav-block ul{
 	margin: 0;
@@ -68,12 +65,10 @@
 
 .image-block .description {
 	position: absolute;
-    background-color: rgba(150, 150, 150, 0.7);
-    border-radius: 5px;
-    padding: 15px;
+    background-color: rgba(150, 150, 150, 0.5);
     margin: 20px;
     top: 20px;
-    color: rgb(255, 259, 182);
+    color: rgb(243, 223, 73);
     max-width: 600px;
 }
 .image-block  .back {
@@ -81,18 +76,20 @@
 }
 
 .image-block  .description .description-main {
-    font-size: 1.6em;
-}	
+    font-size: 1.5em;
+		letter-spacing: 1px;
+		background-color: rgba(150, 150, 150, 0.7);
+		padding: 15px;
+}
 .image-block  .description .description-extra {
-	font-size: 1.3em;
-	font-style: italic;
-    padding-top: 7px;
+	font-size: 1.2em;
+  padding: 15px;
 }
 
 @media (max-width: 800px) {
 	.nav-block {
 		justify-content: center;
-	}	
+	}
 	.nav-block nav {
 		display: none;
 	}

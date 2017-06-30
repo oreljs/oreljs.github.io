@@ -6,17 +6,17 @@
 	display: flex;
 }
 
-.main .common .common-item {	
+.main .common .common-item {
 	flex: 1 1 auto;
+	margin: 15px;
+	padding: 10px;
 }
 
 .main .common .common-item h2 {
 	border-bottom: 3px solid #f3df49;
-    padding-bottom: 4px;
-    margin-right: 20px;
 }
 .main .common .common-item p {
-    margin-right: 20px;
+		line-height: 1.5;
 }
 
 .main .reasons  {
@@ -32,6 +32,8 @@
 	flex-direction: column;
 	align-items: center;
 	min-width: 100px;
+	padding: 10px;
+	margin: 10px;
 }
 
 .main .reasons .reasons-list .reason .reason-text {
@@ -116,19 +118,15 @@
 }
 
 .main .yandex-map iframe {
-	width: 560px; 
+	width: 560px;
 	height: 100%;
 	min-height: 350px;
 	max-width: 100%;
 }
 
 .main .contacts {
-	padding-top: 40px;
-	max-width: 700px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: auto;
 	text-align: center;
-	margin-bottom: 50px;
 }
 
 .main .contacts .contact-form {
@@ -143,11 +141,11 @@
 		display: flex;
 		flex-wrap: wrap;
 	}
-	
+
 	.main .register-form {
 		max-width: 100%;
 	}
-	
+
 	.main .place-wrapper {
 		max-width: 100%;
 		flex-wrap: wrap;
