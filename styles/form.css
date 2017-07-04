@@ -40,7 +40,7 @@
   cursor: pointer;
 }
 .simple-button:hover, .simple-button:active {
-  background: #f3df49;
+  background: #efcd3c;
 }
 
 .contact-form textarea.field {
