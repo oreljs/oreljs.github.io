@@ -4,12 +4,13 @@
 
 .main .common {
 	display: flex;
+	max-width: 1000px;
+        margin: 0 auto;
 }
 
 .main .common .common-item {
 	flex: 1 1 auto;
-	margin: 15px;
-	padding: 10px;
+	margin: 10px;
 }
 
 .main .common .common-item h2 {
