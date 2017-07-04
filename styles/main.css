@@ -94,7 +94,7 @@
 
 .main .place-wrapper {
 	display: flex;
-	max-width: 70%;
+	max-width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
 }
