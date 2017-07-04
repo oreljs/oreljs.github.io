@@ -64,12 +64,14 @@
 }
 
 .image-block .description {
-	position: absolute;
-    background-color: rgba(150, 150, 150, 0.5);
+    position: absolute;
+    background-color: rgba(120, 112, 106, 0.6);
     margin: 20px;
     top: 20px;
     color: rgb(243, 223, 73);
     max-width: 600px;
+    font-family: Georgia;
+    font-style: italic;
 }
 .image-block  .back {
 	min-width: 650px;
@@ -77,9 +79,9 @@
 
 .image-block  .description .description-main {
     font-size: 1.5em;
-		letter-spacing: 1px;
-		background-color: rgba(150, 150, 150, 0.7);
-		padding: 15px;
+    letter-spacing: 1px;
+    padding: 15px;
+    background-color: rgba(120, 112, 106, 0.7);
 }
 .image-block  .description .description-extra {
 	font-size: 1.2em;
