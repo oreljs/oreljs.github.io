@@ -32,11 +32,13 @@
 
 .main .reasons .reasons-list .reason {
 	display: flex;
+	flex: 1;
 	flex-direction: column;
 	align-items: center;
 	min-width: 100px;
 	padding: 10px;
 	margin: 10px;
+	text-align: justify;
 }
 
 .main .reasons .reasons-list .reason .reason-text {
