@@ -145,6 +145,7 @@
 	.main .reasons .reasons-list {
 		display: flex;
 		flex-wrap: wrap;
+		max-width: none;
 	}
 
 	.main .register-form {
