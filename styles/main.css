@@ -26,6 +26,8 @@
 
 .main .reasons .reasons-list {
 	display: flex;
+	max-width: 80%;
+    	margin: 0 auto;
 }
 
 .main .reasons .reasons-list .reason {
