@@ -24,6 +24,8 @@
 .nav-block .name-and-logo {
 	display: flex;
 	align-items: center;
+	text-decoration: none;
+    	color: inherit;
 }
 .nav-block .name-and-logo .logo {
 	width: 50px;
