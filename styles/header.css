@@ -83,7 +83,7 @@
     font-size: 1.5em;
     letter-spacing: 1px;
     padding: 15px;
-    
+
 }
 .image-block  .description .description-extra {
 	font-size: 1.2em;
@@ -100,6 +100,9 @@
 }
 
 @media (max-width: 400px) {
+	.image-block  .back {
+		min-width: 200px;
+	}
 	.image-block  .description {
 		font-size: 0.8em;
 	}
