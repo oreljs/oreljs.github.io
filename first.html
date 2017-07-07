@@ -162,17 +162,7 @@
 							</p>
 						</div>
 					</div>-->
-				</div>
-				<!--div class="become-speaker" id="become-speaker">
-					<button id="become-speaker-button" class="form-button" onclick="openBecomeSpeakerForm()" >Хочу выступить с докладом</button>
-					<form action="https://formspree.io/oreljs@mail.ru" method="POST" id="become-speaker-form" class="contact-form">
-						<input class="field" type="text" name="name" placeholder="Имя и фамилия" required>
-						<input class="field" type="email" name="_replyto" placeholder="E-mail" required>
-						<input class="field" name="speak-topic" placeholder="Тема доклада" required >
-						<textarea class="field" rows="2" name="speak-description" placeholder="Описание доклада" required ></textarea>
-						<input class="form-button" type="submit" value="Отправить запрос">
-					</form>
-				</div-->
+				</div>			
 			</section>
 			<section class="place main-section" id="where">
 				<div class="place-wrapper">
@@ -195,33 +185,13 @@
 						<iframe src="https://api-maps.yandex.ru/frame/v1/-/C6hdMLIC" frameborder="0"></iframe>
 					</div>
 				</div>
-			</section>
-			<section class="contacts main-section" id="contacts">
-				<button id="contact-button" class="form-button" onclick="openContactForm()" >Связаться с организаторами</button>
-				<form action="https://formspree.io/oreljs@mail.ru" method="POST" class="contact-form" id="contact-form">
-					<input class="field" type="text" name="name" placeholder="Имя" required>
-					<input class="field" type="email" name="_replyto" placeholder="E-mail" required>
-					<textarea class="field description" name="message" placeholder="Текст сообщения" required ></textarea>
-					<input class="form-button" type="submit" value="Написать организаторам">
-				</form>
-			</section>
+			</section>			
 		</main>
 		<script>
-			function openBecomeSpeakerForm() {
-				document.getElementById("become-speaker-button").style.display = "none";
-				document.getElementById("become-speaker-form").style.display = "block";
-			}
-
 			function openContactForm() {
 				document.getElementById("contact-button").style.display = "none";
 				document.getElementById("contact-form").style.display = "block";
-			}
-			function openRegisterForm(whoIs) {
-				document.getElementById("register-who-is").value = whoIs;
-				let form = document.getElementById("register-form");
-				form.style.display = "block";
-				form.scrollIntoView();
-			}
+			}			
 		</script>
 		<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter44718487 = new Ya.Metrika({ id:44718487, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/44718487" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 		<script>
