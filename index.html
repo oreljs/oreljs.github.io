@@ -31,7 +31,7 @@
 				</nav>
 			</div>
 			<div class="image-block">
-				<img class="back" src="img/back3.jpg" />
+				<img class="back" src="img/back3.jpg" srcset="img/back3x800.jpg 950w, img/back3x360.jpg 500w, img/back3.jpg 1100w" />
 				<div class="description">
 					<div class="description-main">Фронтендъ-cобрание уездного города</div>
 					<div class="description-extra">Росказни слушать да разговоры говаривать, о всяких выдумках новомодных да о технологиях заморских =)</div>
@@ -56,19 +56,21 @@
 			<section class="reasons main-section">
 				<div class="reasons-list">
 					<div class="reason">
-						<img class="picture" src="img/developer.png" />
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" class="picture"><path d="M16.422 36.124l-2.12-2.12 4.985-4.986-4.842-4.842 2.12-2.12 6.964 6.962M26 30h9m-9-2h9v3h-9z"/><path d="M1 47V11h49v36H1zm4-32.584V42.85l41-.037V14.38l-41 .036z"/><path d="M1 3v12h49V3H1zm8 8H5V7h4v4zm6 0h-4V7h4v4zm6 0h-4V7h4v4z"/></svg>
 						<h3 class="for-who">Если ты разработчик</h3>
 						<p class="reason-text">Это возможность познакомиться и пообщаться с колегами, обменяться опытом и просто хорошо провести время. Самые смелые могут выйти на сцену и <a href="#become-speaker" onclick="openBecomeSpeakerForm()" >сделать доклад</a>.</p>
 						<!--<button class="simple-button" onclick="openRegisterForm('developer')" >Зарегистрироваться</button>-->
 					</div>
 					<div class="reason">
-						<img class="picture" src="img/student.png" />
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="picture"><path style="text-indent:0;text-align:start;line-height:normal;text-transform:none;block-progression:tb;-inkscape-font-specification:Sans" d="M49.97 19.97a3 3 0 0 0-1.095 5.81L84 40 50 53.75 16 40l25.063-10.156a3 3 0 1 0-2.25-5.563L6.875 37.22a3 3 0 0 0 0 5.56L10 44.03V62a3 3 0 1 0 6 0V46.47l4 1.624V69c0 2.466 1.59 4.308 3.375 5.563 1.785 1.254 4.016 2.186 6.656 2.968C35.314 79.098 42.284 80 50 80c7.718 0 14.688-.904 19.97-2.47 2.64-.78 4.87-1.713 6.655-2.968C78.41 73.308 80 71.466 80 69V58a3 3 0 1 0-6 0v10.906c-.017-.004-.138.258-.844.75-.94.66-2.666 1.462-4.906 2.125C63.77 73.11 57.24 74 50 74s-13.77-.89-18.25-2.22c-2.24-.662-3.966-1.463-4.906-2.124-.706-.496-.827-.755-.844-.75V50.53l22.875 9.25a3 3 0 0 0 2.25 0l42-17a3 3 0 0 0 0-5.56l-42-17a3 3 0 0 0-1.156-.25z" color="#000" overflow="visible" font-family="Sans"/>
+						</svg>
 						<h3 class="for-who">Если ты студент</h3>
 						<p class="reason-text">Это шанс поговорить с реальными людьми из профессии, узнать что-то новое и полезное, а может быть встретиться с будующим работодателем.</p>
 						<!--<button class="simple-button" onclick="openRegisterForm('student')" >Зарегистрироваться</button>-->
 					</div>
 					<div class="reason">
-						<img class="picture" src="img/business.png" />
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="picture"><path d="M85.36 23.145H63.974v-6.31c0-2.706-2.2-4.905-4.905-4.905H40.93c-2.704 0-4.905 2.2-4.905 4.904v6.31h-21.39C9.325 23.144 5 27.47 5 32.784v45.65c0 5.313 4.324 9.637 9.638 9.637h70.724c5.314 0 9.64-4.32 9.64-9.634v-45.65c-.002-5.314-4.326-9.637-9.64-9.637zm-42.787-4.67h14.854v4.67H42.573v-4.67zM14.638 29.69h70.724c1.705 0 3.093 1.388 3.093 3.092v19.552h-76.91V32.782c0-1.704 1.39-3.092 3.093-3.092zM85.36 81.524H14.64c-1.704 0-3.092-1.387-3.092-3.092V58.88h33.87v3.988c0 1.81 1.467 3.273 3.273 3.273h2.62c1.81 0 3.276-1.46 3.276-3.27v-3.99h33.87v19.556c.002 1.705-1.386 3.09-3.09 3.09z"/>
+						</svg>
 						<h3 class="for-who">Если ты работодатель</h3>
 						<p class="reason-text">Это отличная возможность найти нужных людей, рассказать о своей компании. Лучший способ поучаствовать - <a href="#become-speaker" onclick="openBecomeSpeakerForm()" >сделать доклад</a>. Возможны и другие формы сотрудничества.</p>
 						<!--<button class="simple-button" onclick="openRegisterForm('business')" >Зарегистрироваться</button>-->
@@ -177,7 +179,7 @@
 					</div>
 					<input class="form-button" type="submit" value="Зарезервировать место">
 				</form>
-			</section>		
+			</section>
 			<section class="speakers main-section" id="speakers">
 				<h2>Прошедшие встречи:</h2>
 				<h2><a href="/first.html">24 июня 2017</a></h2>
@@ -190,21 +192,21 @@
 						<textarea class="field" rows="2" name="speak-description" placeholder="Описание доклада" required ></textarea>
 						<input class="form-button" type="submit" value="Отправить запрос">
 					</form>
-				</div>				
-			</section>		
+				</div>
+			</section>
 			<section class="place main-section" id="where">
 				<div class="place-wrapper">
 					<div class="place-description">
 						<h2>Место и время</h2>
 						<p>Следующая встреча состоится в сентябре 2017 года
 						<p>Inventos Tower - Орел, ул. Русанова, 21а</p>
-						<p>														
+						<p>
 							<a href="http://telegra.ph/Instrukciya-dlya-teh-kto-sobiraetsya-dobiratsya-na-OrelJS-iz-Moskvy-06-07">Инструкция</a> как добраться из Москвы
 							<br/>
 							Пишите нам в <a href="tg://resolve?domain=oreljs">Telegram (@oreljs)</a> и <a href="https://vk.com/oreljs">VK</a>
 							<br/>
 							Подписывайтесь на наш канал в <a href="https://www.youtube.com/channel/UCHZ-BWV4a-2d5EyWsS87HpQ">Youtube</a></p>
-						<img src="img/inventos.jpg" class="inventos-photo"/>
+						<img src="img/inventos.jpg" srcset="img/inventosx360.jpg 500w, img/inventos.jpg 1100w" class="inventos-photo"/>
 					</div>
 					<div class="yandex-map">
 						<iframe src="https://api-maps.yandex.ru/frame/v1/-/C6hdMLIC" frameborder="0"></iframe>
