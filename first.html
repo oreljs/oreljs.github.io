@@ -31,7 +31,11 @@
 				</nav>
 			</div>
 			<div class="image-block">
-				<img class="back" src="img/back2406.jpg" srcset="img/back2406x800.jpg 950w, img/back2406x360a.jpg 500w, img/back2406.jpg 1100w" />
+				<picture>
+					<source srcset="img/back2406x800.webp 950w, img/back2406x360.webp 500w, img/back2406.webp 1100w" type="image/webp" alt=""/>
+					<source srcset="img/back2406x800.jpg 950w, img/back2406x360.jpg 500w, img/back2406.jpg 1100w" alt=""/>
+					<img class="back" src="img/back2406.jpg" />
+				</picture>
 				<div class="description">
 					<div class="description-main">Первая встреча - 24 июня 2017</div>
 					<div class="description-extra">Как стать фронтендером, настройка среды на TS, ES и SystemJS, Angular 4, DraftJS и фронтенд для миллионов</div>
@@ -53,7 +57,10 @@
 				<div class="speakers-list">
 					<div class="speaker">
 						<div class="speaker-info">
-							<img class="picture" src="img/speakers/ashmarov.jpg" />
+							<picture>
+								<source srcset="img/speakers/ashmarov.webp" type="image/webp" alt=""/>
+								<img class="picture" src="img/speakers/ashmarov.jpg" />
+							</picture>
 							<h3 class="speaker-name">Сергей Ашмаров</h3>
 							<div class="speaker-from">Co-founder <a href="http://braind.agency/">Braind</a></div>
 						</div>
@@ -70,7 +77,10 @@
 					</div>
 					<div class="speaker long-description">
 						<div class="speaker-info" >
-							<img class="picture" src="img/speakers/oleksii-okhrymenko.jpg" />
+							<picture>
+								<source srcset="img/speakers/oleksii-okhrymenko.webp" type="image/webp" alt=""/>
+								<img class="picture" src="img/speakers/oleksii-okhrymenko.jpg" />
+							</picture>
 							<h3 class="speaker-name" >Алексей Охрименко</h3>
 							<div class="speaker-from">Senior Frontend Developer в <a href="http://www.iponweb.com/">IPONWEB</a>, Москва</div>
 						</div>
@@ -98,7 +108,10 @@
 					<div class="break"><hr>Перерыв 15 мин<hr></div>
 					<div class="speaker">
 						<div class="speaker-info">
-							<img class="picture" src="img/speakers/Pavel.jpg" />
+							<picture>
+								<source srcset="img/speakers/Pavel.webp" type="image/webp" alt=""/>
+								<img class="picture" src="img/speakers/Pavel.jpg" />
+							</picture>
 							<h3 class="speaker-name">Павел Богатырёв</h3>
 							<div class="speaker-from">Разработчик в <a href="http://www.docsvision.com/">Docsvision</a></div>
 						</div>
@@ -114,7 +127,10 @@
 					</div>
 					<div class="speaker">
 						<div class="speaker-info" >
-							<img class="picture" src="img/speakers/AleksanderFedotov.jpg" />
+							<picture>
+								<source srcset="img/speakers/AleksanderFedotov.webp" type="image/webp" alt=""/>
+								<img class="picture" src="img/speakers/AleksanderFedotov.jpg" />
+							</picture>
 							<h3 class="speaker-name" >Александр Федотов</h3>
 							<div class="speaker-from">Руковожу фронтом в уютном стартапчике, Москва</div>
 						</div>
@@ -131,7 +147,10 @@
 					<div class="break"><hr>Перерыв 15 мин<hr></div>
 					<div class="speaker">
 						<div class="speaker-info" >
-							<img class="picture" src="img/speakers/agoryacheva.jpeg" />
+							<picture>
+								<source srcset="img/speakers/agoryacheva.webp" type="image/webp" alt=""/>
+								<img class="picture" src="img/speakers/agoryacheva.jpeg" />
+							</picture>
 							<h3 class="speaker-name" title="В веб-разработке больше 12-ти лет. Из них 5 лет имею дело со сложными одностраничными приложениями. Последние пару лет вместе с командой пилим SPA на basis.js.">Анастасия Горячева</h3>
 							<div class="speaker-from">Фронтенд тимлид в <a href="http://www.avito.ru/">Avito</a>, Москва</div>
 						</div>
@@ -162,7 +181,7 @@
 							</p>
 						</div>
 					</div>-->
-				</div>			
+				</div>
 			</section>
 			<section class="place main-section" id="where">
 				<div class="place-wrapper">
@@ -179,19 +198,23 @@
 							<a href="http://telegra.ph/Instrukciya-dlya-teh-kto-sobiraetsya-dobiratsya-na-OrelJS-iz-Moskvy-06-07">Инструкция</a> как добраться.
 							<br/>
 							Пишите в <a href="tg://resolve?domain=oreljs">Telegram (@oreljs)</a>, <a href="https://vk.com/oreljs">VK</a>, мы вас встретим.</p>
-						<img src="img/inventos.jpg" srcset="img/inventosx360.jpg 500w, img/inventos.jpg 1100w" class="inventos-photo"/>
+							<picture>
+								<source srcset="img/inventosx360.webp 500w, img/inventos.webp 1100w" type="image/webp" alt=""/>
+								<source srcset="img/inventosx360.jpg 500w, img/inventos.jpg 1100w" />
+								<img src="img/inventos.jpg" class="inventos-photo"/>
+							</picture>
 					</div>
 					<div class="yandex-map">
 						<iframe src="https://api-maps.yandex.ru/frame/v1/-/C6hdMLIC" frameborder="0"></iframe>
 					</div>
 				</div>
-			</section>			
+			</section>
 		</main>
 		<script>
 			function openContactForm() {
 				document.getElementById("contact-button").style.display = "none";
 				document.getElementById("contact-form").style.display = "block";
-			}			
+			}
 		</script>
 		<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter44718487 = new Ya.Metrika({ id:44718487, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/44718487" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 		<script>
