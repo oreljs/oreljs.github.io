@@ -86,8 +86,8 @@
 
 }
 .image-block  .description .description-extra {
-	font-size: 1.2em;
-  padding: 15px;
+    font-size: 1.2em;
+    padding: 15px;
 }
 
 @media (max-width: 800px) {
@@ -105,5 +105,11 @@
 	}
 	.image-block  .description {
 		font-size: 0.8em;
+		margin: 0;
+		top: 0;
+	}
+	.image-block .description .description-main,
+	.image-block .description .description-extra {
+		padding: 5px;
 	}
 }
