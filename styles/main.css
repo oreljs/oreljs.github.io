@@ -41,6 +41,11 @@
 	text-align: justify;
 }
 
+.main .reasons .reasons-list .reason .picture {
+	width: 125px;
+	fill: #2d3132;
+}
+
 .main .reasons .reasons-list .reason .reason-text {
 	max-width: 100%;
 	margin-top: 0;
