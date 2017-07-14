@@ -1,0 +1,60 @@
+.main
+  .speakers
+    h2
+      text-align: center
+    .speakers-list
+      .speaker
+        padding: 20px 0
+        display: flex
+        max-width: 70%
+        margin: auto
+      .break
+        padding: 20px 0
+        display: flex
+        max-width: 70%
+        margin: auto
+        font-style: italic
+        hr
+          flex: 1 1 0%
+          margin-left: 10px
+          margin-right: 10px
+    .contact-form
+      display: none
+  .speaker-info
+    padding-right: 20px
+    padding-bottom: 10px
+    text-align: center
+    flex: 0 0 250px
+    .speaker-name
+      margin-bottom: 5px
+      margin-top: 5px
+    .speaker-from
+      color: darkslategray
+      a
+        color: red
+        text-decoration: none
+    .picture
+      border-radius: 50%
+      width: 150px
+  .speaker.long-description .speak-theme
+    margin-top: 0
+  .become-speaker
+    margin-left: auto
+    margin-right: auto
+    max-width: 60%
+    text-align: center
+    padding-top: 40px
+    .field.description
+      height: 70px
+
+@media (max-width: 800px)
+  .main
+    .speakers .speakers-list
+      .speaker
+        max-width: 100%
+        flex-wrap: wrap
+      .speaker-info
+        margin-left: auto
+        margin-right: auto
+    .become-speaker
+      max-width: 100%
