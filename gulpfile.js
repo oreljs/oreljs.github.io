@@ -2,7 +2,7 @@
 
 var gulp = require('gulp');
 var watch = require('gulp-watch');
-var pug = require('gulp-pug');
+// var pug = require('gulp-pug');
 var notify = require("gulp-notify");
 var rimraf = require('rimraf');
 var plumber = require('gulp-plumber');
@@ -58,11 +58,11 @@ gulp.task('scss:prod', function () {
 		.pipe(gulp.dest(path.prod.css))
 });
 // gulp.task('pug:prod', function () {
-		gulp.src(path.src.pug)
-				.pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
-				.pipe(pug())
-				.pipe(gulp.dest(path.prod.html))
-});
+// 		gulp.src(path.src.pug)
+// 				.pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
+// 				.pipe(pug())
+// 				.pipe(gulp.dest(path.prod.html))
+// });
 gulp.task('image:prod', function () {
 		gulp.src(path.src.img)
 				.pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
@@ -83,7 +83,7 @@ gulp.task('webp:prod', function () {
 });
 
 gulp.task('scss:build', function () {
-		gulp.src(path.src.sass)
+		gulp.src(path.src.scss)
 		.pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
 		.pipe(sourcemaps.init())
 		.pipe(sass().on('error', sass.logError))
@@ -92,11 +92,11 @@ gulp.task('scss:build', function () {
 		.pipe(gulp.dest(path.build.css))
 });
 // gulp.task('pug:build', function () {
-		gulp.src(path.src.pug)
-				.pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
-				.pipe(pug({pretty: true}))
-				.pipe(gulp.dest(path.build.html))
-});
+// 		gulp.src(path.src.pug)
+// 				.pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
+// 				.pipe(pug({pretty: true}))
+// 				.pipe(gulp.dest(path.build.html))
+// });
 gulp.task('image:build', function () {
 		gulp.src(path.src.img)
 				.pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
