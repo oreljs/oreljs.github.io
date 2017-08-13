@@ -1,0 +1,55 @@
+.form-button {
+  background: #f7df1e;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1.2em;
+  border: 0;
+  cursor: pointer;
+}
+
+.form-button:hover, .form-button:active  {
+  background: #efcd3c;
+  text-decoration: none;
+}
+
+.contact-form {
+	padding: 10px;
+	text-align: left;
+    	max-width: 900px;
+    	margin: 0 auto;
+}
+
+.contact-form .field {
+	width: 100%;
+	margin-top: 10px;
+	font-size: 1.1em;
+	padding: 5px 10px;
+	box-sizing: border-box;
+    border: 0;
+    border-bottom: 1px lightblue solid;
+}
+
+.contact-form .field::-webkit-input-placeholder {color: silver; font-weight: 100;}
+.contact-form .field ::-moz-placeholder          {color: silver; font-weight: 100;}
+.contact-form .field :-ms-input-placeholder      {color: silver; font-weight: 100;}
+
+.simple-button {
+  border: none;
+  margin-top: auto;
+  padding: 9px 15px;
+  font-size: inherit;
+  background-color: #f7df1e;
+  cursor: pointer;
+}
+.simple-button:hover, .simple-button:active {
+  background: #efcd3c;
+}
+
+.contact-form textarea.field {
+    height: 100px;
+}
+
+.contact-form .form-button {
+  float: right;
+  font-size: 1em;
+}
