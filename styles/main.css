@@ -1,5 +1,5 @@
 .main .main-section {
-	padding: 20px;
+	padding: 100px 20px;
 }
 
 .main .common {
@@ -22,6 +22,7 @@
 
 .main .reasons  {
 	text-align: center;
+	background-color: #f7f7f7;
 }
 
 .main .reasons .reasons-list {
