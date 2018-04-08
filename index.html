@@ -9,10 +9,6 @@
 		<title>ОрелJS Meetup | Встреча фронтенд разработчиков в Орле</title>
 		<link rel="icon" href="favicon.ico?1" type="image/icon" />
 		<link rel="stylesheet" href="styles/common.css" type="text/css" />
-		<link rel="stylesheet" href="styles/header.css" type="text/css" />
-		<link rel="stylesheet" href="styles/main.css" type="text/css" />
-		<link rel="stylesheet" href="styles/form.css" type="text/css" />
-		<link rel="stylesheet" href="styles/main.speakers.css" type="text/css" />
 	</head>
 	<body class="root">
 		<header class="main-header">
@@ -186,12 +182,70 @@
 					<input class="form-button" type="submit" value="Зарезервировать место">
 				</form>
 			</section>
+			
 			<section class="speakers main-section" id="speakers">
-				<h2>Прошедшие встречи:</h2>
-				<h2><a href="first/index.html">24 июня 2017</a></h2>
+				<h2>Доклады</h2>
+				<div class="speakers-list">
+					<!--
+					<div class="speaker">
+						<div class="speaker-info">
+							<img class="picture" src="img/speakers/Artem.jpg" />
+							<h3 class="speaker-name">Артём “Grinn” Халецкий</h3>
+							<div class="speaker-from"> Разработчик в <a href="http://www.payps.ru/">PayPS</a></div>
+						</div>
+						<div class="speak-info">
+							<h3 class="speak-theme">
+								Под капотом async/await
+							</h3>
+							<p class="speak-description">
+								Разберемся во внутренностях механизма async/await, вспомним про итераторы, генераторы и промисы
+							</p>
+						</div>
+					</div>
+										
+					<div class="speaker">
+						<div class="speaker-info">
+							<picture>
+								<source srcset="" type="image/webp" alt=""/>
+								<img class="picture" src="" />
+							</picture>
+							<h3 class="speaker-name">Владимир Петунин</h3>
+							<div class="speaker-from">Разработчик в <a href="http://www.payps.ru/">PayPS</a></div>
+						</div>
+						<div class="speak-info">
+							<h3 class="speak-theme">
+								Тестирование с использованием SlimerJS 
+							</h3>
+							<p class="speak-description">
+								Обзор библиотеки SlimerJS
+							</p>
+						</div>
+					</div>
+					
+					<div class="break"><hr>Перерыв 15 мин<hr></div>			
+					-->
+					<div class="speaker">
+						<div class="speaker-info">
+							<picture>
+								<source srcset="" type="image/webp" alt=""/>
+								<img class="picture" src="" />
+							</picture>
+							<h3 class="speaker-name"></h3>
+						</div>
+						<div class="speak-info">
+							<h3 class="speak-theme">
+								Твой доклад
+							</h3>
+							<p class="speak-description">
+								Темы: JS, верстка, тестирование
+							</p>
+						</div>
+					</div>	
+				</div>
 				<div class="become-speaker" id="become-speaker">
 					<button id="become-speaker-button" class="form-button" onclick="openBecomeSpeakerForm()" >Хочу выступить с докладом</button>
 					<form action="https://formspree.io/oreljs@mail.ru" method="POST" id="become-speaker-form" class="contact-form">
+						<a href="#" class="close-button">x</a>
 						<input class="field" type="text" name="name" placeholder="Имя и фамилия" required>
 						<input class="field" type="email" name="_replyto" placeholder="E-mail" required>
 						<input class="field" name="speak-topic" placeholder="Тема доклада" required >
@@ -200,40 +254,57 @@
 					</form>
 				</div>
 			</section>
+
 			<section class="place main-section" id="where">
 				<div class="place-wrapper">
 					<div class="place-description">
 						<h2>Место и время</h2>
-						<p>О месте и дате следующей встречи мы сообщим, как только будет сформирована программа.</p>						
+						<p>21 апреля 2018 (суббота), начало - 13:30
+						<p>Inventos Tower - Орел, ул. Русанова, 21а</p>				
 						<p>
 							<a href="http://telegra.ph/Instrukciya-dlya-teh-kto-sobiraetsya-dobiratsya-na-OrelJS-iz-Moskvy-06-07">Инструкция</a> как добраться из Москвы
 							<br/>
 							Пишите нам в <a href="tg://resolve?domain=oreljs">Telegram (@oreljs)</a> и <a href="https://vk.com/oreljs">VK</a>
 							<br/>
 							Подписывайтесь на наш канал в <a href="https://www.youtube.com/channel/UCHZ-BWV4a-2d5EyWsS87HpQ">Youtube</a></p>
-						
+							<picture>
+								<source srcset="img/inventosx360.webp 500w, img/inventos.webp 1100w" type="image/webp" alt=""/>
+								<source srcset="img/inventosx360.jpg 500w, img/inventos.jpg 1100w" />
+								<img src="img/inventos.jpg" class="inventos-photo"/>
+							</picture>
+			
 					</div>
-					
-				</div>
+					<div class="yandex-map">
+							<iframe src="https://api-maps.yandex.ru/frame/v1/-/C6hdMLIC" frameborder="0"></iframe>
+					</div>
+				</div>		
 			</section>
+
 			<section class="contacts main-section" id="contacts">
+				<div>
+					<h2>Прошедшие встречи:</h2>
+					<a href="first/index.html">24 июня 2017</a>	
+				</div>
+				<br/><br/>
 				<button id="contact-button" class="form-button" onclick="openContactForm()" >Связаться с организаторами</button>
 				<form action="https://formspree.io/oreljs@mail.ru" method="POST" class="contact-form" id="contact-form">
+					<a href="#" class="close-button">x</a>
 					<input class="field" type="text" name="name" placeholder="Имя" required>
 					<input class="field" type="email" name="_replyto" placeholder="E-mail" required>
 					<textarea class="field description" name="message" placeholder="Текст сообщения" required ></textarea>
 					<input class="form-button" type="submit" value="Написать организаторам">
-				</form>
+				</form>		
 			</section>
 		</main>
+		<footer>
+			Community ❤️ OrelJS, 2018
+		</footer>
 		<script>
 			function openBecomeSpeakerForm() {
-				document.getElementById("become-speaker-button").style.display = "none";
 				document.getElementById("become-speaker-form").style.display = "block";
 			}
 
 			function openContactForm() {
-				document.getElementById("contact-button").style.display = "none";
 				document.getElementById("contact-form").style.display = "block";
 			}
 			function openRegisterForm(whoIs) {
@@ -241,6 +312,16 @@
 				let form = document.getElementById("register-form");
 				form.style.display = "block";
 				form.scrollIntoView();
+			}
+			var closeButtons = document.getElementsByClassName("close-button");
+			for (var i=0; i<closeButtons.length; i++)
+			{
+				var closeButton = closeButtons[i];
+				closeButton.addEventListener("click", function(e){
+					e.preventDefault();
+					var target = e.target;
+					target.parentElement.style.display = "none";
+				});
 			}
 		</script>
 		<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter44718487 = new Ya.Metrika({ id:44718487, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/44718487" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
