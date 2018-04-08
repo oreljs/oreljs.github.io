@@ -2,3 +2,4 @@ node_modules/
 gulpfile.js
 styles/*.map
 src/
+.DS_Store
