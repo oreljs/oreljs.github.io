@@ -129,7 +129,7 @@ footer{
     top: 20px;
     color: rgb(243, 223, 73);
     max-width: 600px;
-    font-family: Georgia;
+    font-family: 'Lobster', Georgia;
     font-style: italic;
 }
 .image-block  .back {
