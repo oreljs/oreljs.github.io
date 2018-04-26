@@ -124,10 +124,12 @@ footer{
 
 .image-block .description {
     position: absolute;
-    background-color: rgba(120, 112, 106, 0.6);
+    background-color: rgba(70, 62, 56, 0.6);
+    border-radius: 4px;
     margin: 20px;
-    top: 20px;
-    color: rgb(243, 223, 73);
+    top: 0;
+    left: 0;
+    color: rgb(253, 249, 220);
     max-width: 600px;
     font-family: 'Marck Script', cursive, Georgia;
 }
@@ -136,14 +138,13 @@ footer{
 }
 
 .image-block  .description .description-main {
-    font-size: 1.5em;
-    letter-spacing: 1px;
-    padding: 15px;
+    font-size: 1.8em;
+    padding: 10px 15px 0px 15px;
 
 }
 .image-block  .description .description-extra {
-    font-size: 1.2em;
-    padding: 15px;
+    font-size: 1.3em;
+    padding: 10px 15px;
 }
 
 @media (max-width: 800px) {
