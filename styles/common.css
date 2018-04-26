@@ -129,8 +129,7 @@ footer{
     top: 20px;
     color: rgb(243, 223, 73);
     max-width: 600px;
-    font-family: 'Lobster', Georgia;
-    font-style: italic;
+    font-family: 'Marck Script', cursive, Georgia;
 }
 .image-block  .back {
 	min-width: 650px;
