@@ -433,6 +433,14 @@ footer{
 	margin: auto;
 }
 
+.main .speakers .speakers-list  .speaker a {
+    text-decoration: none;
+}
+
+.main .speakers .speakers-list  .speaker a:hover{
+    text-decoration: underline;
+}
+
 .main .speakers .speakers-list .break  {
 	font-style: italic;
 }
