@@ -202,8 +202,9 @@ footer{
 
 .main .reasons .reasons-list {
 	display: flex;
-	max-width: 80%;
+	max-width: 1200px;
     	margin: 0 auto;
+	justify-content: space-around;
 }
 
 .main .reasons .reasons-list .reason {
