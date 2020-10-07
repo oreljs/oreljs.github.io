@@ -194,7 +194,8 @@ footer{
 		line-height: 1.5;
 }
 
-.main .reasons  {
+.main .reasons,
+.main .archive {
 	text-align: center;
 	background-color: #f7f7f7;
 }
