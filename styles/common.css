@@ -25,12 +25,12 @@ hr {
 footer{
 	text-align: center;
 	padding: 40px;
-	background-color: #f7f7f7;
+	background-color: #f7ec9a;
 }
 
 @media (max-width: 800px) {
 	.root {
-		font-size: 0.8em
+		font-size: 0.9em
 	}
 }
 
