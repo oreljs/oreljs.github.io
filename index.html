@@ -22,11 +22,10 @@
 				<nav class="nav-menu">
 					<ul>
 						<li><a href="#next">Следующий митап</a></li>
-						<li><a href="#contacts">Архив</a></li>
+						<li><a href="#contacts">Прошедшие встречи</a></li>
 						<li><a href="#" onclick="openContactForm()">Контакты</a></li>
 						<li><a href="http://vk.com/oreljs" class="vk" ></a></li>                        
-                        			<li><a href="tg://resolve?domain=oreljs" class="telegram" aria-label="Telegram (@oreljs)" title="Заходите в наш чат telegram (@oreljs)"></a></li>                        
-					</ul>
+                        		</ul>
 				</nav>
 			</div>
 			<div class="image-block">
@@ -77,204 +76,13 @@
 						<p class="reason-text">Это отличная возможность найти нужных людей, рассказать о своей компании. Лучший способ поучаствовать - <a href="#become-speaker" onclick="openBecomeSpeakerForm()" >сделать доклад</a>. Возможны и другие формы сотрудничества.</p>
 						<!--<button class="simple-button" onclick="openRegisterForm('business')" >Зарегистрироваться</button>-->
 					</div>
-				</div>
-				<form action="https://formspree.io/oreljs@mail.ru" method="POST" id="register-form" class="contact-form register-form">
-					<input hidden name="type" value="Участник" >
-					<select class="field" name="whois" id="register-who-is" required>
-						<option value="developer">Разработчик</option>
-						<option value="student">Студент</option>
-						<option value="business">Работодатель</option>
-					</select>
-					<input class="field" type="text" name="name" placeholder="Имя и фамилия" required>
-					<input class="field" type="email" name="_replyto" placeholder="E-mail" required>
-					<input class="field" type="text" name="city" placeholder="Из какого вы города" required>
-					<textarea class="field" name="about" placeholder="Коротко о себе - кем работаете/учитесь, как давно в профессии, какими технологиями интересуетесь" required ></textarea>
-
-					<div class="tech-table-wrapper">
-					<div class="tech-table">
-						<div class="tech-header"><label></label>
-						<label>использовал</label>
-						<label>знаю что это</label>
-						<label>не знаю</label>
-						</div>
-						<div class="tech"><span class="tech-name">Angular</span>
-						<label><input type="radio" name="Angular" value="use" required></label>
-						<label><input type="radio" name="Angular" value="know"></label>
-						<label><input type="radio" name="Angular" value="dontknow"></label>
-						</div>
-						<div class="tech"><span class="tech-name">React</span>
-						<label><input type="radio" name="React" value="use" required></label>
-						<label><input type="radio" name="React" value="know"></label>
-						<label><input type="radio" name="React" value="dontknow"></label>
-						</div>
-						<div class="tech"><span class="tech-name">Vue</span>
-						<label><input type="radio" name="Vue" value="use" required></label>
-						<label><input type="radio" name="Vue" value="know"></label>
-						<label><input type="radio" name="Vue" value="dontknow"></label>
-						</div>
-						<div class="tech"><span class="tech-name">Ember</span>
-						<label><input type="radio" name="Ember" value="use" required></label>
-						<label><input type="radio" name="Ember" value="know"></label>
-						<label><input type="radio" name="Ember" value="dontknow"></label>
-						</div>
-						<div class="tech"><span class="tech-name">JQuery</span>
-						<label><input type="radio" name="JQuery" value="use" required></label>
-						<label><input type="radio" name="JQuery" value="know"></label>
-						<label><input type="radio" name="JQuery" value="dontknow"></label>
-						</div>
-						<div class="tech"><span class="tech-name">Basis.js</span>
-						<label><input type="radio" name="Basis.js" value="use" required></label>
-						<label><input type="radio" name="Basis.js" value="know"></label>
-						<label><input type="radio" name="Basis.js" value="dontknow"></label>
-						</div>
-						<div class="tech"><span class="tech-name">TypeScript</span>
-						<label><input type="radio" name="TypeScript" value="use" required></label>
-						<label><input type="radio" name="TypeScript" value="know"></label>
-						<label><input type="radio" name="TypeScript" value="dontknow"></label>
-						</div>
-						<div class="tech"><span class="tech-name">Babel</span>
-						<label><input type="radio" name="Babel" value="use" required></label>
-						<label><input type="radio" name="Babel" value="know"></label>
-						<label><input type="radio" name="Babel" value="dontknow"></label>
-						</div>
-						<div class="tech"><span class="tech-name">Gulp</span>
-						<label><input type="radio" name="Gulp" value="use" required></label>
-						<label><input type="radio" name="Gulp" value="know"></label>
-						<label><input type="radio" name="Gulp" value="dontknow"></label>
-						</div>
-						<div class="tech"><span class="tech-name">Webpack</span>
-						<label><input type="radio" name="Webpack" value="use" required></label>
-						<label><input type="radio" name="Webpack" value="know"></label>
-						<label><input type="radio" name="Webpack" value="dontknow"></label>
-						</div>
-						<div class="tech"><span class="tech-name">NPM</span>
-						<label><input type="radio" name="NPM" value="use" required></label>
-						<label><input type="radio" name="NPM" value="know"></label>
-						<label><input type="radio" name="NPM" value="dontknow"></label>
-						</div>
-						<div class="tech"><span class="tech-name">SystemJS</span>
-						<label><input type="radio" name="SystemJS" value="use" required></label>
-						<label><input type="radio" name="SystemJS" value="know"></label>
-						<label><input type="radio" name="SystemJS" value="dontknow"></label>
-						</div>
-						<div class="tech"><span class="tech-name">CSS in JS</span>
-						<label><input type="radio" name="CSSinJS" value="use" required></label>
-						<label><input type="radio" name="CSSinJS" value="know"></label>
-						<label><input type="radio" name="CSSinJS" value="dontknow"></label>
-						</div>
-						<div class="tech"><span class="tech-name">Препроцессоры (SASS/SCSS/LESS)</span>
-						<label><input type="radio" name="Preprocessors" value="use" required></label>
-						<label><input type="radio" name="Preprocessors" value="know"></label>
-						<label><input type="radio" name="Preprocessors" value="dontknow"></label>
-						</div>
-						<div class="tech"><span class="tech-name">Flexbox</span>
-						<label><input type="radio" name="Flexbox" value="use" required></label>
-						<label><input type="radio" name="Flexbox" value="know"></label>
-						<label><input type="radio" name="Flexbox" value="dontknow"></label>
-						</div>
-						<div class="tech"><span class="tech-name">Grid layout</span>
-						<label><input type="radio" name="Grid" value="use" required></label>
-						<label><input type="radio" name="Grid" value="know"></label>
-						<label><input type="radio" name="Grid" value="dontknow"></label>
-						</div>
-					</div>
-					</div>
-					<input class="form-button" type="submit" value="Зарезервировать место">
-				</form>
-			</section>
-			
-			<!--<section class="speakers main-section" id="speakers">
-				<h2>Доклады</h2>
-				<div class="speakers-list">
-					<div class="break"><hr>Сбор гостей, открытие встречи 13:30 - 13:50<hr></div>	
-					<div class="speaker">
-						<div class="speaker-info">
-							<picture>
-								<img class="picture" src="img/speakers/1.png">
-							</picture>
-							<h3 class="speaker-name">Игорь Буруля</h3>
-							<div class="speaker-from">Разработчик в <a href="http://www.docsvision.com/">Docsvision</a></div>
-						</div>
-						<div class="speak-info">
-							<p class="speak-time">13:50 - 14:20</p>
-							<h3 class="speak-theme">
-									Сравнение подходов к организации CSS
-							</h3>
-							<p class="speak-description">
-									Рассмотрим различные варианты — от БЭМ до CSS-in-JS
-							</p>
-                            <p>
-                                Смотреть <a href="https://www.youtube.com/watch?v=byrctliOoBg">видео</a><br/>
-                                Скачать презентацию (<a target="_blank" href="files/Burulya_OrelJS2_CSS.pdf">pdf</a>, <a target="_blank" href="files/Burulya_OrelJS2_CSS.pptx">pptx</a>)
-                            </p>
-						</div>
-					</div>	
-					<div class="break"><hr>Перерыв 10 мин<hr></div>						
-					<div class="speaker">
-						<div class="speaker-info">
-							<picture>
-								<img class="picture" src="img/speakers/2.jpg" />
-							</picture>
-							<h3 class="speaker-name">Денис Малиночкин</h3>
-							<div class="speaker-from">Разработчик инфраструктуры разработки интерфейсов в <a href="http://yandex.ru/">Yandex</a></div>
-						</div>
-						<div class="speak-info">
-							<p class="speak-time">15:00 - 15:50</p>
-							<h3 class="speak-theme">
-								Take a TypeScript
-							</h3>
-							<p class="speak-description">
-									Расскажу о статической типизации, почему типизировать код полезно и важно, а самое главное – как это сделать, используя TypeScript. 
-							</p>
-                            <p>
-                                Смотреть <a href="https://www.youtube.com/watch?v=Ox3Y9DuP-2s">видео</a><br/>
-                                Скачать презентацию (<a target="_blank" href="files/Malinochkin_OrelJS2_take_a_typescript.pdf">pdf</a>, <a target="_blank" href="files/Malinochkin_OrelJS2_take_a_typescript.key">keynote</a>)
-                            </p>
-						</div>
-					</div>
-					<div class="break"><hr>Закрытие встречи, общение с коллегами и докладчиками 16:20 - 17:30<hr></div>	
-				<div class="become-speaker" id="become-speaker">
-					<button id="become-speaker-button" class="form-button" onclick="openBecomeSpeakerForm()" >Хочу выступить с докладом</button>
-					<form action="https://formspree.io/oreljs@mail.ru" method="POST" id="become-speaker-form" class="contact-form">
-						<a href="#" class="close-button">x</a>
-						<input class="field" type="text" name="name" placeholder="Имя и фамилия" required>
-						<input class="field" type="email" name="_replyto" placeholder="E-mail" required>
-						<input class="field" name="speak-topic" placeholder="Тема доклада" required >
-						<textarea class="field" rows="2" name="speak-description" placeholder="Описание доклада" required ></textarea>
-						<input class="form-button" type="submit" value="Предложить доклад">
-					</form>
-				</div>
-			</section>-->
-
-			<!--<section class="place main-section" id="where">
-				<div class="place-wrapper">
-					<div class="place-description">
-						<h2>Место и время</h2>
-						<p>21 апреля 2018 (суббота), начало - 13:30
-						<p>ЦСИ (Центр Своевременного Искусства), ул. Ленина, д. 1, типография Труд, 4 этаж, вход со стороны Тургеневского моста)</p>				
-						<p>
-							<!--<a href="http://telegra.ph/Instrukciya-dlya-teh-kto-sobiraetsya-dobiratsya-na-OrelJS-iz-Moskvy-06-07">Инструкция</a> как добраться из Москвы-->
-                            <!--
-							<br/>
-							Пишите нам в <a href="tg://resolve?domain=oreljs">Telegram (@oreljs)</a> и <a href="https://vk.com/oreljs">VK</a>
-							<br/>
-							Подписывайтесь на наш канал в <a href="https://www.youtube.com/channel/UCHZ-BWV4a-2d5EyWsS87HpQ">Youtube</a></p>
-							<picture>
-								<img src="img/csi.png" class="inventos-photo"/>
-							</picture>
-			
-					</div>
-					<div class="yandex-map">
-							<iframe src="https://yandex.ru/map-widget/v1/-/CBquZZE6gC" frameborder="0"></iframe>
-					</div>
-				</div>		
-			</section>-->
-            
+				</div>				 
+			</section> 
             
 			<section class="contacts main-section" id="next" >
 				<div>
 					<h2>Следующий митап</h2>
-					<p>Следите за новостями в чате <a href="tg://resolve?domain=oreljs" >Telegram (@oreljs)</a>, <a href="http://vk.com/oreljs" >вконтакте</a> и на <a href="https://www.meetup.com/ru-RU/%D0%9E%D1%80%D1%91%D0%BB-%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0-%D0%9F%D0%9E-Meetup/">meetup.com</a>.</p>                        
+					<p>Следите за новостями на сайте и нашей странице <a href="http://vk.com/oreljs" >вконтакте</a></p>                        
 				</div>
 				<br/><br/>
 				
@@ -298,7 +106,7 @@
 			</section>
 		</main>
 		<footer>
-			Community ❤️ OrelJS, 2018
+			Community ❤️ OrelJS, 2021
 		</footer>
 		<script>
 			function openBecomeSpeakerForm() {
